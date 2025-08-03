@@ -38,6 +38,6 @@ app.post("/api/contact", async (req, res) => {
   }
 });
 console.log("Starting server...");
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+// ✅ Correct (ES Module)
+export default app;
+
